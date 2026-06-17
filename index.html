@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Makes the page responsive on phones -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & Signup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- This wrapper centers everything and holds the background -->
+  <div class="container">
+
+    <!-- A box that holds BOTH cards side by side -->
+    <div class="auth-wrapper">
+
+      <!-- ====== LOGIN CARD ====== -->
+      <div class="card">
+        <h2>Welcome Back</h2>
+        <p class="subtitle">Login to your account</p>
+
+        <form>
+          <!-- "label" describes each input. "for" links it to the input id -->
+          <label for="login-email">Email</label>
+          <input type="email" id="login-email" placeholder="you@example.com">
+
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" placeholder="Enter your password">
+
+          <button type="submit" class="btn">Login</button>
+        </form>
+
+        <p class="switch-text">Don't have an account? Sign up &rarr;</p>
+      </div>
+
+      <!-- ====== SIGNUP CARD ====== -->
+      <div class="card">
+        <h2>Create Account</h2>
+        <p class="subtitle">Join us today</p>
+
+        <form>
+          <label for="signup-name">Full Name</label>
+          <input type="text" id="signup-name" placeholder="John Doe">
+
+          <label for="signup-email">Email</label>
+          <input type="email" id="signup-email" placeholder="you@example.com">
+
+          <label for="signup-password">Password</label>
+          <input type="password" id="signup-password" placeholder="Create a password">
+
+          <label for="signup-confirm">Confirm Password</label>
+          <input type="password" id="signup-confirm" placeholder="Repeat your password">
+
+          <button type="submit" class="btn">Sign Up</button>
+        </form>
+
+        <p class="switch-text">&larr; Already have an account? Login</p>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
