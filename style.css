@@ -1,0 +1,128 @@
+/* ====== GLOBAL RESET ====== */
+/* Removes default spacing so every browser looks the same */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* width includes padding and border */
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* ====== BACKGROUND CONTAINER ====== */
+/* This fills the whole screen and centers the cards */
+.container {
+  min-height: 100vh;   /* at least full screen height */
+  display: flex;
+  align-items: center;     /* vertical center */
+  justify-content: center; /* horizontal center */
+  padding: 20px;
+
+  /* A purple gradient layered over an Unsplash photo */
+  background: linear-gradient(rgba(60, 40, 120, 0.85), rgba(30, 20, 60, 0.85)),
+              url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+/* ====== WRAPPER FOR BOTH CARDS ====== */
+.auth-wrapper {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;         /* lets cards stack on small screens */
+  justify-content: center;
+}
+
+/* ====== THE FORM CARDS ====== */
+.card {
+  background: #fff;
+  width: 350px;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+/* Card lifts slightly when hovered */
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  color: #3c2878;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  color: #888;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+/* ====== FORM FIELDS ====== */
+form {
+  display: flex;
+  flex-direction: column;  /* stacks fields vertically */
+}
+
+label {
+  margin: 12px 0 6px 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #444;
+}
+
+input {
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+/* Highlights the field when the user clicks it */
+input:focus {
+  outline: none;
+  border-color: #6c5ce7;
+  box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.2);
+}
+
+/* ====== SUBMIT BUTTON ====== */
+.btn {
+  margin-top: 20px;
+  padding: 13px;
+  background: #6c5ce7;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #4834d4;      /* darker purple */
+  transform: scale(1.02);
+}
+
+/* ====== SWITCH TEXT (bottom of card) ====== */
+.switch-text {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 13px;
+  color: #6c5ce7;
+  cursor: pointer;
+}
+
+/* ====== RESPONSIVE DESIGN ====== */
+/* On small screens, make cards full width */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    max-width: 350px;
+  }
+}
