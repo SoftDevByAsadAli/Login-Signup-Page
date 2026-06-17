@@ -14,7 +14,7 @@ A clean, modern, and fully responsive Login and Signup page user interface. Buil
 
 ## Live Demo
 
-[View Live Demo](https://your-username.github.io/login-signup-ui/)
+[View Live Demo](https://softdevbyasadali.github.io/Login-Signup-Page/)
 <!-- Replace the link above with your real GitHub Pages link -->
 
 ## Features
